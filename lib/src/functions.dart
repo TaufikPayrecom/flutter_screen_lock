@@ -59,7 +59,7 @@ Future<void> screenLock({
     context,
     PageRouteBuilder<void>(
       opaque: false,
-      barrierColor: Colors.black.withOpacity(0.2),
+      // barrierColor: Colors.black.withOpacity(0.2),
       pageBuilder: (context, animation, secondaryAnimation) => PopScope(
         canPop: canCancel && onCancelled == null,
         child: ScreenLock(
